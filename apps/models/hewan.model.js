@@ -20,5 +20,5 @@ module.exports = (mongoose) => {
     return object;
   });
 
-  return mongoose.model("mahasiswa", schema);
+  return mongoose.model("hewan", schema);
 };
