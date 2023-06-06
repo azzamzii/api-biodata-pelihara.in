@@ -2,6 +2,10 @@ module.exports = (app) => {
   const hewan = require("../controllers/hewan.controller");
   const r = require("express").Router();
 
+  app.get("/", (req, res) => {
+    res.send("Server Berjalan");
+  });
+
   r.get("/", hewan.findAll);
   r.get("/:id", hewan.show);
   r.post("/", hewan.create);
