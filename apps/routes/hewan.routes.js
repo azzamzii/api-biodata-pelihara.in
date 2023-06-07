@@ -3,7 +3,7 @@ module.exports = (app) => {
   const r = require("express").Router();
 
   app.get("/", (req, res) => {
-    res.send("Server Berjalan");
+    res.send("Server Running");
   });
 
   r.get("/", hewan.findAll);
